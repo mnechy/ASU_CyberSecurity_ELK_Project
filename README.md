@@ -95,6 +95,7 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat allows up to monitor and rack all of the system log, as well as any specified locations for changes made.
 ![](Diagrams/Filebeat.png)
 
+
 - Metricbeat monitors data pertaining to system metrics, such as data usage, system usage, and uptime.
 ![](Diagrams/Metricbeat.png)
 
