@@ -27,13 +27,13 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly secure, in addition to restricting traffic to the network.
 -What aspect of security do load balancers protect? What is the advantage of a jump box?
-  - The Load Balancer protects against Distibuted Denial-Of-Servvice attacks by shifting the the attack traffic
+  - The Load Balancer protects against Distibuted Denial-Of-Servvice attacks by shifting the the attack traffic.
   - The Jump Box is the host device that can be accessed securely from the internet.  Once connected, the user can "jump" around the network(s) and devices to perform          administrative tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- What does Filebeat watch for?_
+- What does Filebeat watch for?
     - Filebeat monitors system log files and/or specified locations for changes made to the system, then forward them to the user specified area for indexing
-- What does Metricbeat record?_
+- What does Metricbeat record?
     - Metricbeat records system metrics and statistics, and ships them to the user specfied location
 
 The configuration details of each machine may be found below.
@@ -84,8 +84,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1   10.0.0.7
-- Web-2   10.0.0.6
+- Web-1 (DVWA)  10.0.0.7
+- Web-2 (DVWA)  10.0.0.6
 
 We have installed the following Beats on these machines:
 - Filebeat
