@@ -27,9 +27,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly secure, in addition to restricting traffic to the network.
 -What aspect of security do load balancers protect? What is the advantage of a jump box?
-
-    - The Load Balancer protects against Distibuted Denial-Of-Servvice attacks by shifting the the attack traffic
-    - The Jump Box is the host device that can be accessed securely from the internet.  Once connected, the user can "jump" around the network(s) and devices to perform                 administrative tasks.
+  - The Load Balancer protects against Distibuted Denial-Of-Servvice attacks by shifting the the attack traffic
+  - The Jump Box is the host device that can be accessed securely from the internet.  Once connected, the user can "jump" around the network(s) and devices to perform          administrative tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 - What does Filebeat watch for?_
