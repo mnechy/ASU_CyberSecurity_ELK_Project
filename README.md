@@ -5,6 +5,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![](Diagrams/Matthew_Nechy_Project_1.png)
 
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 - [ELK Installation](Ansible/install-elk.yml)
@@ -25,9 +26,10 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly secure, in addition to restricting traffic to the network.
--What aspect of security do load balancers protect? What is the advantage of a jump box?_
+-What aspect of security do load balancers protect? What is the advantage of a jump box?
+
     - The Load Balancer protects against Distibuted Denial-Of-Servvice attacks by shifting the the attack traffic
-    - The Jump Box is the host device that can be accessed securely from the internet.  Once connected, the user can "jump" around the network(s) and devices to perform administrative tasks.
+    - The Jump Box is the host device that can be accessed securely from the internet.  Once connected, the user can "jump" around the network(s) and devices to perform                 administrative tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 - What does Filebeat watch for?_
@@ -49,12 +51,10 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- Add whitelisted IP addresses_
-    - My personal home device Public IP
+- My personal home device Public IP
 
 Machines within the network can only be accessed by the Jump Box via SSH.
-- Which machine did you allow to access your ELK VM? What was its IP address?_   
-    - The Jump Bov Virtual Machine with a VNet IP of 10.0.0.8
+- The Jump Box Virtual Machine with a VNet IP of 10.0.0.8
 
 A summary of the access policies in place can be found in the table below.
 
@@ -63,7 +63,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | No                  | Home Public IP            |
 | Web-1    | No                  | 10.0.0.8                  |
 | Web-2    | No                  | 10.0.0.8                  |
-| ELK      | No                  | 10.0.0.8 / Home Public IP |
+| ELK      | No                  | 10.0.0.8 & Home Public IP |
 
 ### Elk Configuration
 
@@ -72,7 +72,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
     - The main advantage of Ansible is that it allows the IT administrators to automate daily tasks, allowing them to focus on other important tasks.
 
 The playbook implements the following tasks:
-- _In 3-6 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - Install docker.io
 - Install python3-pip3
 - Install docker module
