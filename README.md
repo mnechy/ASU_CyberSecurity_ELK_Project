@@ -94,7 +94,7 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat allows up to monitor and rack all of the system log, as well as any specified locations for changes made.
+- Filebeat allows us to monitor and track all of the system logs, as well as any specified locations for changes made.
 ![](Diagrams/Filebeat.png)
 
 
